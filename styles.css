@@ -1,0 +1,144 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    color: white; /* Changed text color to white */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 15%;
+    color: #f79a04; /* This can also be changed to white if you want */
+    background-image: url(Images/\(P4\)\ Rosé\ Euphoria.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    height: 80px;
+}
+
+nav img {
+    width: 100px;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 300%; /* For 3 sections */
+}
+
+.slide {
+    width: 100vw; /* Ensure each slide takes the full viewport width */
+    height: 100vh; /* Ensure each slide takes the full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#section1 {
+    background-image: url(Images/Background\ Banner\ rose.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#section2 {
+    background-image: url(Images/\(C.I.\)\ Twitter\ banner.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100px;
+}
+
+.character-details {
+    background-color: #e8eaf6; /* Light background for character details section */
+    overflow: hidden; /* Prevent images from spilling out */
+    display: flex; /* Use flexbox to center the images */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.character-details .img-gallery {
+    display: flex; /* Use flexbox for gallery */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center images in the row */
+    width: 100%; /* Full width */
+}
+
+.character-details img {
+    width: 100%; /* Full width of the parent container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop the image if it overflows */
+    margin: 1px; /* Add some spacing between images */
+}
+
+.about-me, .character-details {
+    padding: 40px;
+    color: white; /* Changed text color to white */
+    text-align: center;
+}
+
+.controls {
+    position: absolute;
+    top: 50%; /* Centers the buttons vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin: 5px;
+    padding: 0; /* Remove padding to avoid background around buttons */
+    cursor: pointer;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    outline: none; /* Remove focus outline */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    /* Optional: Add hover effects if desired */
+    /* background-color: #ab47bc; */
+}
+
+.img-gallery {
+    display: grid;
+    grid-gap: 30px;
+    size: 100px;
+}
+
+.img-gallery2 {
+    display: grid;
+    grid-gap: 30px;
+    size: 100px;
+}
+
+.controls img {
+    width: 100px;
+}
+
+/* Styling for headings and smaller text */
+h2 {
+    font-family: 'Cinzel', serif; /* Big headings */
+    color: white; /* White color for headings */
+}
+
+p {
+    font-family: 'Futura Light', sans-serif; /* Smaller text */
+    color: white; /* White color for smaller text */
+}
